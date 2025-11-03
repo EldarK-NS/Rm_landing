@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Recruit Master – Website for Recruitment and Mobile App</title>
+    <title data-i18n="meta.title">
+      Recruit Master — Платформа для рекрутинга и мобильное приложение
+    </title>
     <meta
       name="description"
-      content="Recruit Master is a website for recruitment and mobile app designed for freelance recruiters and remote recruiters. Manage hiring with an integrated CRM/ATS and streamline your recruitment process."
+      data-i18n="meta.description"
+      content="Recruit Master — сайт и мобильная платформа для рекрутинга с встроенной CRM/ATS: совместная работа рекрутеров и заказчиков, прозрачный найм."
     />
     <meta
       name="keywords"
-      content="website for recruitment, mobile recruitment app, freelance recruiters, remote recruiters, recruitment CRM, hiring platform"
+      content="рекрутинг, мобильное приложение, CRM, ATS, фриланс рекрутеры, удаленные рекрутеры"
     />
     <meta name="theme-color" content="#4ead29" />
 
@@ -25,11 +28,13 @@
     <!-- Open Graph -->
     <meta
       property="og:title"
-      content="Recruit Master – Website for Recruitment and Mobile App"
+      data-i18n="meta.og_title"
+      content="Recruit Master — Платформа для рекрутинга и мобильное приложение"
     />
     <meta
       property="og:description"
-      content="A website for recruitment and mobile platform connecting companies with freelance and remote recruiters. Built-in CRM/ATS."
+      data-i18n="meta.og_description"
+      content="Recruit Master — веб и мобильная платформа с CRM/ATS для компаний и рекрутеров."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://eldark-ns.github.io/Rm_landing/" />
@@ -39,23 +44,27 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Recruit Master – Website for Recruitment and Mobile App"
+      data-i18n="meta.tw_title"
+      content="Recruit Master — Платформа для рекрутинга и мобильное приложение"
     />
     <meta
       name="twitter:description"
-      content="Website for recruitment and mobile platform for freelance and remote recruiters."
+      data-i18n="meta.tw_description"
+      content="Веб‑сайт и мобильная платформа для найма с CRM/ATS."
     />
     <meta name="twitter:image" content="assets/og-image.jpg" />
   </head>
 
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip"
+      >Перейти к содержимому</a
+    >
     <header class="site-header">
       <div class="container">
         <a class="logo" href="#">
           <img
             src="assets/logo.svg"
-            alt="Recruit Master logo"
+            alt="Логотип Recruit Master"
             width="28"
             height="28"
           />
@@ -68,23 +77,24 @@
             aria-controls="navMenu"
           >
             <span class="nav__burger" aria-hidden="true"></span>
-            <span class="sr-only">Menu</span>
+            <span class="sr-only" data-i18n="a11y.menu">Меню</span>
           </button>
           <ul id="navMenu" class="nav__list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#how">How it works</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#design">Design Preview</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-i18n="nav.about">О проекте</a></li>
+            <li><a href="#how" data-i18n="nav.how">Как это работает</a></li>
             <li>
-              <a
-                href="https://www.freeprivacypolicy.com/live/42299b7f-b2fd-406d-b013-7ae7a3975e84"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Privacy</a
-              >
+              <a href="#features" data-i18n="nav.features">Возможности</a>
             </li>
-            <li><a href="delete-account.html">Delete Account</a></li>
+            <li><a href="#design" data-i18n="nav.design">Дизайн</a></li>
+            <li class="lang-switch">
+              <label for="langSelect" class="sr-only" data-i18n="nav.lang_label"
+                >Выбор языка</label
+              >
+              <select id="langSelect" aria-label="Language">
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
+              </select>
+            </li>
           </ul>
         </nav>
       </div>
@@ -95,21 +105,35 @@
       <section class="section hero" id="hero">
         <div class="container grid-2">
           <div>
-            <h1>Recruit Master — Website for Recruitment and Mobile App</h1>
-            <p class="lead">
-              A website for recruitment and mobile platform with an integrated
-              CRM/ATS for seamless collaboration between recruiters and clients
-              — ideal for freelance recruiters and remote recruiters.
+            <h1 data-i18n="hero.title">
+              Recruit Master — платформа для рекрутинга и мобильное приложение
+            </h1>
+            <p class="lead" data-i18n="hero.lead">
+              Веб‑сайт и мобильная платформа со встроенной CRM/ATS для
+              прозрачной совместной работы рекрутеров и заказчиков — идеальна
+              для фриланс‑ и удалённых рекрутеров.
             </p>
             <div class="cta-row">
-              <a class="btn btn--brand" href="#about">Learn More</a>
-              <a class="btn btn--ghost" href="#contact">Contact</a>
+              <a class="btn btn--brand" href="#about" data-i18n="cta.learn"
+                >Узнать больше</a
+              >
+              <a class="btn btn--ghost" href="#contact" data-i18n="cta.contact"
+                >Связаться</a
+              >
+              <a
+                class="btn btn--ghost btn--webapp"
+                href="https://recruitmaster.online/"
+                target="_blank"
+                rel="noopener"
+                data-i18n="cta.webapp"
+                >Web&nbsp;App</a
+              >
             </div>
           </div>
           <div class="hero__illustration">
             <img
               src="assets/hero-illustration.svg"
-              alt="Illustration of recruiters collaborating in a mobile app"
+              alt="Иллюстрация совместной работы в приложении Recruit Master"
               loading="eager"
             />
           </div>
@@ -121,27 +145,23 @@
         <div class="container about-content">
           <img
             src="assets/collaborate.svg"
-            alt="Collaboration illustration"
+            alt="Иллюстрация сотрудничества"
             class="about-image"
           />
-
           <div class="about__text">
-            <h2>About the Project</h2>
-            <p>
-              <strong>Recruit Master</strong> is a
-              <em>website for recruitment and mobile platform</em> with an
-              integrated CRM/ATS recruitment management system. It brings
-              recruiters and employers together on a single platform, enabling
-              quick access to pre-screened, high-quality candidates and ensuring
-              a transparent hiring process with ratings, comments, and full
-              candidate history.
+            <h2 data-i18n="about.title">О проекте</h2>
+            <p data-i18n="about.p1">
+              <strong>Recruit Master</strong> — это веб‑сайт и мобильная
+              платформа для рекрутинга с интегрированной CRM/ATS. Площадка
+              объединяет рекрутеров и работодателей, даёт быстрый доступ к
+              проверенным кандидатам и обеспечивает прозрачный процесс найма с
+              оценками, комментариями и полной историей кандидатов.
             </p>
-            <p>
-              For employers, this means faster hiring without spending weeks on
-              sourcing. For recruitment agencies, it’s a way to monetize
-              candidate databases, manage the entire recruitment process from a
-              phone, and collaborate with clients in real time — including
-              freelance recruiters and remote recruiters.
+            <p data-i18n="about.p2">
+              Для компаний это означает ускорение найма без недель на сорсинг.
+              Для агентств и частных рекрутеров — монетизацию базы кандидатов,
+              управление процессом с телефона и сотрудничество с заказчиком в
+              реальном времени.
             </p>
           </div>
         </div>
@@ -150,37 +170,36 @@
       <!-- HOW IT WORKS -->
       <section class="section alt" id="how">
         <div class="container">
-          <h2>How It Works</h2>
+          <h2 data-i18n="how.title">Как это работает</h2>
           <ol class="steps">
             <li>
               <span class="step__num">1</span>
-              <h3>Post or search</h3>
-              <p>
-                Post your vacancy or search for candidates that match required
-                skills and experience.
+              <h3 data-i18n="how.s1.title">Разместите вакансию или ищите</h3>
+              <p data-i18n="how.s1.text">
+                Публикуйте вакансии или находите кандидатов с нужным опытом.
               </p>
             </li>
             <li>
               <span class="step__num">2</span>
-              <h3>Get pre‑screened profiles</h3>
-              <p>
-                Receive vetted profiles from recruiters with ratings and notes.
+              <h3 data-i18n="how.s2.title">Получайте прескрининг</h3>
+              <p data-i18n="how.s2.text">
+                Получайте проверенные профили с оценками и заметками рекрутеров.
               </p>
             </li>
             <li>
               <span class="step__num">3</span>
-              <h3>Collaborate in real time</h3>
-              <p>
-                Chat, schedule interviews, and share feedback in one place —
-                perfect for freelance recruiters and remote recruiters.
+              <h3 data-i18n="how.s3.title">
+                Работайте вместе в реальном времени
+              </h3>
+              <p data-i18n="how.s3.text">
+                Чаты, интервью и обратная связь — в одном месте.
               </p>
             </li>
             <li>
               <span class="step__num">4</span>
-              <h3>Track progress</h3>
-              <p>
-                Monitor the hiring process from a single dashboard with complete
-                transparency.
+              <h3 data-i18n="how.s4.title">Отслеживайте прогресс</h3>
+              <p data-i18n="how.s4.text">
+                Единая панель с полной прозрачностью по воронке найма.
               </p>
             </li>
           </ol>
@@ -190,7 +209,7 @@
       <!-- FEATURES -->
       <section class="section" id="features">
         <div class="container">
-          <h2>Key Features</h2>
+          <h2 data-i18n="features.title">Ключевые возможности</h2>
           <div class="feature-grid">
             <article class="feature">
               <div class="feature__icon" aria-hidden="true">
@@ -208,14 +227,13 @@
                   />
                 </svg>
               </div>
-              <h3>Candidate Marketplace</h3>
-              <p class="muted">
-                Optimized for flexible teams: companies,
-                <strong>freelance recruiters</strong>, and
-                <strong>remote recruiters</strong>.
+              <h3 data-i18n="features.f1.title">Маркетплейс кандидатов</h3>
+              <p class="muted" data-i18n="features.f1.muted">
+                Подходит для команд любой конфигурации: компании, фриланс‑ и
+                удалённые рекрутеры.
               </p>
-              <p>
-                Curated talent pool with profiles, experience, and availability.
+              <p data-i18n="features.f1.text">
+                Подобранный пул талантов с профилями, опытом и доступностью.
               </p>
             </article>
             <article class="feature">
@@ -237,10 +255,10 @@
                   />
                 </svg>
               </div>
-              <h3>Built‑in CRM/ATS</h3>
-              <p>
-                Manage pipelines, priorities, and finalists like in a modern
-                ATS.
+              <h3 data-i18n="features.f2.title">Встроенная CRM/ATS</h3>
+              <p data-i18n="features.f2.text">
+                Управляйте воронкой, приоритетами и финалистами как в
+                современном ATS.
               </p>
             </article>
             <article class="feature">
@@ -261,10 +279,10 @@
                   />
                 </svg>
               </div>
-              <h3>Real‑Time Collaboration</h3>
-              <p>
-                Shared visibility for recruiters and clients with comments and
-                ratings.
+              <h3 data-i18n="features.f3.title">Совместная работа</h3>
+              <p data-i18n="features.f3.text">
+                Общая видимость для рекрутеров и заказчиков, комментарии и
+                рейтинги.
               </p>
             </article>
             <article class="feature">
@@ -288,10 +306,9 @@
                   />
                 </svg>
               </div>
-              <h3>Candidate Evaluation</h3>
-              <p>
-                Scorecards and history help focus on the most suitable
-                finalists.
+              <h3 data-i18n="features.f4.title">Оценка кандидатов</h3>
+              <p data-i18n="features.f4.text">
+                Скоркарты и история помогают выбирать лучших финалистов.
               </p>
             </article>
           </div>
@@ -301,26 +318,41 @@
       <!-- DESIGN PREVIEW -->
       <section class="section alt" id="design">
         <div class="container">
-          <h2>Design Preview</h2>
+          <h2 data-i18n="design.title">Дизайн</h2>
           <div class="gallery">
             <img
-              src="assets/design-1.svg"
-              alt="Recruit Master onboarding screen"
+              src="assets/design-1.jpg"
+              alt="Единое пространство взаимодействия с клиентами"
               loading="lazy"
             />
             <img
-              src="assets/design-2.svg"
-              alt="Recruit Master CRM/ATS pipeline screen"
+              src="assets/design-2.jpg"
+              alt="База кандидатов — профили, заметки и история коммуникаций"
               loading="lazy"
             />
             <img
-              src="assets/design-3.svg"
-              alt="Recruit Master candidate evaluation screen"
+              src="assets/design-3.jpg"
+              alt="Воронка подбора — статусы, этапы и приоритизация в канбан-виде"
               loading="lazy"
             />
             <img
-              src="assets/design-4.svg"
-              alt="Recruit Master collaboration chat screen"
+              src="assets/design-4.jpg"
+              alt="Рейтинг кандидатов — оценка hard- и soft-скиллов, комментарий рекрутера"
+              loading="lazy"
+            />
+            <img
+              src="assets/design-5.jpg"
+              alt="Назначение интервью и встреч — планирование и отправка приглашений"
+              loading="lazy"
+            />
+            <img
+              src="assets/design-6.jpg"
+              alt="Коммуникации — чат с заказчиком и кандидатом, отправка файлов и напоминаний"
+              loading="lazy"
+            />
+            <img
+              src="assets/design-7.jpg"
+              alt="Мобильное и web-приложение — работа из офиса и с полей"
               loading="lazy"
             />
           </div>
@@ -330,31 +362,33 @@
       <!-- CONTACT -->
       <section class="section" id="contact">
         <div class="container narrow">
-          <h2>Contact</h2>
+          <h2 data-i18n="contact.title">Контакты</h2>
           <address class="contact">
             <p>
-              <strong>Phone:</strong>
+              <strong data-i18n="contact.phone_label">Телефон:</strong>
               <a href="tel:+37441223050">+374 41223050</a>
             </p>
             <p>
-              <strong>Email:</strong>
+              <strong data-i18n="contact.email_label">Email:</strong>
               <a href="mailto:dkechkin3@gmail.com">dkechkin3@gmail.com</a>
             </p>
             <p>
-              <strong>Address:</strong> 19A Koryun Street, Yerevan 0009, Armenia
+              <strong data-i18n="contact.addr_label">Адрес:</strong> 19A Koryun
+              Street, Yerevan 0009, Armenia
             </p>
           </address>
         </div>
       </section>
+
+      <!-- PRIVACY -->
     </main>
+
     <section class="section">
       <div class="container narrow">
-        <p class="muted">
-          Recruit Master is a
-          <strong>website for recruitment and mobile app</strong> built around
-          transparency and speed. It streamlines collaboration between hiring
-          teams, <strong>freelance recruiters</strong>, and
-          <strong>remote recruiters</strong>.
+        <p class="muted" data-i18n="closing">
+          Recruit Master — веб‑сайт и мобильное приложение, построенные на
+          принципах прозрачности и скорости. Платформа упрощает взаимодействие
+          команд найма, фриланс‑ и удалённых рекрутеров.
         </p>
       </div>
     </section>
@@ -363,18 +397,19 @@
       <div class="container footer-grid">
         <p>© 2025 Recruit Master. All rights reserved.</p>
         <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-i18n="nav.about">О проекте</a></li>
+          <li><a href="#features" data-i18n="nav.features">Возможности</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Контакты</a></li>
           <li>
-            <a
-              href="https://www.freeprivacypolicy.com/live/42299b7f-b2fd-406d-b013-7ae7a3975e84"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Privacy</a
+            <a href="privacy.html" data-i18n="nav.privacy"
+              >Политика конфиденциальности</a
             >
           </li>
-          <li><a href="delete-account.html">Delete Account</a></li>
+          <li>
+            <a href="delete-account.html" data-i18n="nav.delete"
+              >Удалить аккаунт</a
+            >
+          </li>
         </ul>
       </div>
     </footer>

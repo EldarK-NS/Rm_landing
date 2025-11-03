@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Recruit Master — Delete Account</title>
+    <title data-i18n="delete.meta.title">
+      Recruit Master — Удаление аккаунта
+    </title>
     <meta
       name="description"
-      content="How to delete your Recruit Master account and what data is removed."
+      data-i18n="delete.meta.description"
+      content="Как удалить аккаунт Recruit Master и какие данные будут удалены."
     />
     <meta name="theme-color" content="#4ead29" />
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Recruit Master — Delete Account" />
+    <meta
+      property="og:title"
+      data-i18n="delete.meta.og_title"
+      content="Recruit Master — Удаление аккаунта"
+    />
     <meta
       property="og:description"
-      content="Step-by-step instructions to delete your account and associated data."
+      data-i18n="delete.meta.og_desc"
+      content="Пошаговые инструкции по удалению аккаунта и данных."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -25,7 +31,6 @@
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      /* Лёгкая «карточка», в остальном используем общий styles.css */
       .card {
         background: #f7f7f7;
         border: 1px solid #eee;
@@ -45,14 +50,16 @@
     </style>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip"
+      >Перейти к содержимому</a
+    >
 
     <header class="site-header">
       <div class="container">
         <a class="logo" href="index.html">
           <img
             src="assets/logo.svg"
-            alt="Recruit Master logo"
+            alt="Логотип Recruit Master"
             width="28"
             height="28"
           />
@@ -65,16 +72,33 @@
             aria-controls="navMenu"
           >
             <span class="nav__burger" aria-hidden="true"></span>
-            <span class="sr-only">Menu</span>
+            <span class="sr-only" data-i18n="a11y.menu">Меню</span>
           </button>
           <ul id="navMenu" class="nav__list">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#features">Features</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
             <li>
-              <a href="delete-account.html" aria-current="page"
-                >Delete Account</a
+              <a href="index.html#about" data-i18n="nav.about">О проекте</a>
+            </li>
+            <li>
+              <a href="index.html#features" data-i18n="nav.features"
+                >Возможности</a
               >
+            </li>
+            <li>
+              <a href="index.html#contact" data-i18n="nav.contact">Контакты</a>
+            </li>
+            <li>
+              <a href="privacy.html" data-i18n="nav.privacy"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="lang-switch">
+              <label for="langSelect" class="sr-only" data-i18n="nav.lang_label"
+                >Выбор языка</label
+              >
+              <select id="langSelect" aria-label="Language">
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
+              </select>
             </li>
           </ul>
         </nav>
@@ -84,117 +108,67 @@
     <main id="main">
       <section class="section">
         <div class="container narrow">
-          <h1>Delete Account — Recruit Master</h1>
-          <p class="muted">
-            Instructions for permanently deleting your account and associated
-            data.
+          <h1 data-i18n="delete.title">Удаление аккаунта — Recruit Master</h1>
+          <p class="muted" data-i18n="delete.subtitle">
+            Инструкция по удалению аккаунта и связанных данных.
           </p>
 
           <div class="card">
-            <h2>How to delete your account (in the app)</h2>
+            <h2 data-i18n="delete.how">Как удалить аккаунт (в приложении)</h2>
             <ol>
-              <li>
-                Open the <strong>Recruit Master</strong> app on your device.
+              <li data-i18n="delete.steps.1">
+                Откройте приложение <strong>Recruit Master</strong>.
               </li>
-              <li>
-                Go to the bottom menu and tap <span class="kbd">Profile</span>.
-              </li>
-              <li>Select <span class="kbd">Settings & Profile</span>.</li>
-              <li>
-                Scroll down and tap <span class="kbd">Delete Account</span>.
-              </li>
-              <li>
-                Confirm by pressing <span class="kbd">Delete</span> in the
-                confirmation dialog.
-              </li>
-            </ol>
-            <p>Once confirmed, the deletion is irreversible.</p>
-          </div>
-
-          <div class="card">
-            <h2>What data will be deleted</h2>
-            <ul>
-              <li>Personal info: name, surname, email, profile photo</li>
-              <li>Account identifiers and preferences</li>
-              <li>
-                Vacancies created by you and candidate notes linked to your
-                account
-              </li>
-              <li>
-                Messages/chats associated with your account (where technically
-                applicable)
-              </li>
-              <li>Files you uploaded (e.g., resumes)</li>
-            </ul>
-            <p class="muted">
-              Aggregated, fully anonymized analytics may be retained for product
-              statistics (cannot identify you).
-            </p>
-          </div>
-
-          <div class="card">
-            <h2>Security & processing</h2>
-            <ul>
-              <li>Data is transmitted over HTTPS and stored securely.</li>
-              <li>
-                Deletion is initiated immediately; removal from backups
-                completes within <strong>up to 30 days</strong>.
-              </li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h2>Need help?</h2>
-            <p>
-              If you cannot access the app, request deletion via email:
-              <a href="mailto:dkechkin3@gmail.com">dkechkin3@gmail.com</a>.
-              Please write from the email linked to your account.
-            </p>
-          </div>
-
-          <h2 style="margin-top: 32px">
-            Удаление аккаунта — Recruit Master (RU)
-          </h2>
-
-          <div class="card">
-            <h3>Как удалить аккаунт (в приложении)</h3>
-            <ol>
-              <li>Откройте приложение <strong>Recruit Master</strong>.</li>
-              <li>
+              <li data-i18n="delete.steps.2">
                 В нижнем меню выберите вкладку <span class="kbd">Профиль</span>.
               </li>
-              <li>Перейдите в <span class="kbd">Настройки & Профиль</span>.</li>
-              <li>Внизу нажмите <span class="kbd">Удалить аккаунт</span>.</li>
-              <li>
-                Подтвердите удаление, нажав <span class="kbd">Удалить</span> в
-                диалоге подтверждения.
+              <li data-i18n="delete.steps.3">
+                Перейдите в <span class="kbd">Настройки &amp; Профиль</span>.
+              </li>
+              <li data-i18n="delete.steps.4">
+                Нажмите <span class="kbd">Удалить аккаунт</span>.
+              </li>
+              <li data-i18n="delete.steps.5">
+                Подтвердите удаление в диалоге подтверждения.
               </li>
             </ol>
-            <p>После подтверждения восстановить данные будет невозможно.</p>
-          </div>
-
-          <div class="card">
-            <h3>Что будет удалено</h3>
-            <ul>
-              <li>Имя, фамилия, email, фото профиля</li>
-              <li>Идентификаторы аккаунта и настройки</li>
-              <li>Созданные вами вакансии и заметки по кандидатам</li>
-              <li>Сообщения/чаты, связанные с аккаунтом (где применимо)</li>
-              <li>Загруженные файлы (например, резюме)</li>
-            </ul>
-            <p class="muted">
-              Обезличенная агрегированная статистика может храниться для
-              аналитики продукта (без идентификации пользователя).
+            <p data-i18n="delete.irrev">
+              После подтверждения восстановить данные будет невозможно.
             </p>
           </div>
 
           <div class="card">
-            <h3>Безопасность и сроки</h3>
+            <h2 data-i18n="delete.what">Что будет удалено</h2>
             <ul>
-              <li>
+              <li data-i18n="delete.what_items.1">
+                Имя, фамилия, email, фото профиля
+              </li>
+              <li data-i18n="delete.what_items.2">
+                Идентификаторы аккаунта и настройки
+              </li>
+              <li data-i18n="delete.what_items.3">
+                Созданные вакансии и заметки по кандидатам
+              </li>
+              <li data-i18n="delete.what_items.4">
+                Сообщения/чаты (где применимо)
+              </li>
+              <li data-i18n="delete.what_items.5">
+                Загруженные файлы (например, резюме)
+              </li>
+            </ul>
+            <p class="muted" data-i18n="delete.analytics">
+              Обезличенная агрегированная статистика может сохраняться для
+              аналитики продукта.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 data-i18n="delete.security">Безопасность и сроки</h2>
+            <ul>
+              <li data-i18n="delete.security_items.1">
                 Передача данных по HTTPS, хранение на защищённых серверах.
               </li>
-              <li>
+              <li data-i18n="delete.security_items.2">
                 Удаление инициируется сразу; полное исключение из резервных
                 копий — до <strong>30 дней</strong>.
               </li>
@@ -202,8 +176,8 @@
           </div>
 
           <div class="card">
-            <h3>Нужна помощь?</h3>
-            <p>
+            <h2 data-i18n="delete.help">Нужна помощь?</h2>
+            <p data-i18n="delete.help_text">
               Если нет доступа к приложению — напишите на
               <a href="mailto:dkechkin3@gmail.com">dkechkin3@gmail.com</a> с
               почты, привязанной к аккаунту.
@@ -217,12 +191,21 @@
       <div class="container footer-grid">
         <p>© 2025 Recruit Master. All rights reserved.</p>
         <ul class="footer-links">
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-          <li><a href="privacy.html" rel="nofollow">Privacy</a></li>
           <li>
-            <a href="delete-account.html" aria-current="page">Delete Account</a>
+            <a href="index.html#about" data-i18n="nav.about">О проекте</a>
+          </li>
+          <li>
+            <a href="index.html#features" data-i18n="nav.features"
+              >Возможности</a
+            >
+          </li>
+          <li>
+            <a href="index.html#contact" data-i18n="nav.contact">Контакты</a>
+          </li>
+          <li>
+            <a href="privacy.html" data-i18n="nav.privacy"
+              >Политика конфиденциальности</a
+            >
           </li>
         </ul>
       </div>
