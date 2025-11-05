@@ -74,7 +74,7 @@ const i18n = {
       "Веб-сайт и мобильная платформа со встроенной CRM/ATS для прозрачной совместной работы рекрутеров и заказчиков — идеальна для фриланс- и удалённых рекрутеров.",
     "cta.learn": "Узнать больше",
     "cta.contact": "Связаться",
-    "cta.webapp": "Web App",
+    "cta.webapp": "Вход / Регистрация",
     "about.title": "О проекте",
     "about.p1":
       "Recruit Master — это веб-сайт и мобильная платформа для рекрутинга с интегрированной CRM/ATS. Площадка объединяет рекрутеров и работодателей, даёт быстрый доступ к проверенным кандидатам и обеспечивает прозрачный процесс найма с оценками, комментариями и полной историей кандидатов.",
@@ -155,7 +155,7 @@ const i18n = {
       "A web and mobile platform with integrated CRM/ATS for transparent collaboration between recruiters and clients — ideal for freelance and remote recruiters.",
     "cta.learn": "Learn More",
     "cta.contact": "Contact",
-    "cta.webapp": "Web App",
+    "cta.webapp": "Login / Sign-up",
     "about.title": "About the Project",
     "about.p1":
       "Recruit Master is a web and mobile recruitment platform with an integrated CRM/ATS. It connects recruiters and employers, giving quick access to vetted candidates and a transparent hiring process with ratings, comments and complete candidate history.",
