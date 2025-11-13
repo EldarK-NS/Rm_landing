@@ -224,7 +224,22 @@ h3 {
 }
 .hero__illustration {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+/* App Store badge */
+.store-badges {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.store-badge__img {
+  display: block;
+  height: 40px; /* можно менять под вкус, например 44px или 36px */
+  max-width: none;
 }
 
 .cta-row {
@@ -387,6 +402,12 @@ h3 {
   }
   .hero {
     padding: 84px 0;
+  }
+  .hero__illustration {
+    align-items: center;
+  }
+  .store-badges {
+    justify-content: center;
   }
 }
 
